@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img{
+    max-width: 100%;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding:0;
+    color:hsl(215, 51%, 70%);
+}
+
+body{
+    font-family: "Outfit","sans-serif";
+    font-size: 15px;
+    background-color: hsl(217, 54%, 11%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 1px);
+    margin: 1.25rem;
+
+}
+body p{
+    font-size: 18px;
+    color:hsl(215, 51%, 70%);
+}
+.container{
+    background-color: hsl(216, 50%, 16%);
+    padding: 1.25rem;
+    border-radius: 0.625rem;
+    box-shadow: 5px 5px 5px 5px hsl(216, 53%, 9%);
+    margin-bottom: 2rem;
+}
+.container img{
+    border-radius: 0.625rem;
+}
+.container ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 0;
+    border-bottom: 1px solid hsl(215, 32%, 27%);
+}
+.container ul li:first-child{
+    color:cyan;
+    text-shadow: 0px 0px 1px hsl(178, 100%, 50%);
+}
+.container ul li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container ul img{
+    margin-right: 0.5rem;
+}
+.container .imageMain{
+    position: relative;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 20px;
+}
+.container .imageMain .overlay{
+    position: absolute;
+    background-color: hsl(178, 100%, 50% ,0%);
+    top: 0;
+    width: 100%;
+    height:calc(100% - 4px);
+    z-index: 999;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    border-radius: 0.625rem;
+}
+.container .imageMain .overlay img{
+   
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.container .imageMain .overlay:hover{
+    opacity: 1;
+}
+.container .imageMain .overlay:hover{
+    cursor: pointer;
+    background-color: hsl(178, 100%, 50%,50%);
+    
+}
+.container h2{
+    text-align: left;
+    color: hsl(0, 0%, 100%)
+}
+.container .whiteTxt{
+    color:hsl(0, 0%, 100%)
+}
+.container .whiteTxt:hover{
+    color:hsl(178, 100%, 50%);
+    text-shadow: 0px 0px 1px hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+.container .avatar{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.container .avatar img{
+    width: 3rem;
+    border:1px solid white ;
+    border-radius: 2rem;
+}
+.attribution { 
+    color: white;
+    font-size: 13px;
+    text-align: center; }
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+    
+}
+.attribution a:hover{
+    color: hsl(178, 100%, 50%);
+    font-size: 15px;
+}
+@media (min-width:500px){
+    .container{
+        width: 400px;
+    }
+}
