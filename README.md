@@ -25,7 +25,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./images/Screenshot-QRcodeComponent.png)
+![](./images/Screenshot-NFT-Card.png)
 
 ### Links
 
